@@ -1,0 +1,42 @@
+#toast-container {
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  pointer-events: none;
+
+  &.toast-bottom-center {
+    bottom: 0;
+    right: 0;
+  }
+
+  .toast-alert {
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: all;
+
+    &.alert-fail {
+      color: $yellow-600;
+      background-color: $yellow-100;
+      border-color: $yellow-600;
+    }
+
+    &.alert-error {
+      color: $red-600;
+      background-color: $red-100;
+      border-color: $red-600;
+    }
+
+    &.alert-success {
+      color: $green-600;
+      background-color: $green-100;
+      border-color: $green-600;
+    }
+  }
+
+  .fade {
+    transition: opacity 0.1s ease-out;
+  }
+}

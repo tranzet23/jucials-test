@@ -1,0 +1,241 @@
+.userroles-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 440px;
+  height: 100%;
+}
+
+.userroles-btn-add-wrapper {
+  flex: 1 1 auto;
+}
+
+.userroles-btn-add {
+  width: 100%;
+}
+
+.userroles-pagination-total-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+.userroles-table-rowbtns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  a:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.userroles-btn-edit {
+  width: max-content !important;
+}
+.userroles-btn-edit {
+  width: 100%;
+}
+.userroles-btn-delete {
+  flex: 1 1 auto;
+  width: 50%;
+}
+.userroles-btn-edit-link {
+  flex: 1 1 auto;
+  width: 50%;
+}
+
+.userroles-table-header-item-1 {
+  width: 15%;
+}
+
+.userroles-table-header-item-2 {
+  width: 57%;
+}
+
+.userroles-table-header-item-3 {
+  display: flex;
+  justify-content: center;
+}
+
+// Modal
+.userroles-modaldelete-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.userroles-modal-delete-text {
+  max-width: 300px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+
+  color: #22252c;
+}
+
+.userroles-modal-delete-confirm {
+  max-width: 100px;
+  background: #556ee6;
+  border: 1px solid #556ee6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 45px;
+}
+.userroles-modal-delete-cancel {
+  max-width: 100px;
+  background: #74788d;
+  margin-top: 15px;
+  border: 1px solid #cacfd4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.userroles-table-item-role-span {
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+// FORM
+
+.userroles-form-wrapper {
+  max-width: 1065px;
+  font-family: Poppins, sans-serif;
+}
+
+.userroles-form-name-card {
+  max-width: 520px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.0313726);
+  border-radius: 3.25px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #495057;
+  line-height: 19px;
+
+  color: #495057;
+}
+.userroles-form-name-input-wrapper {
+  margin-top: 10px;
+}
+.userroles-form-name-cardbody {
+  padding: 35px 126px 54px 20px;
+}
+
+.userroles-form-access-hr {
+  margin-top: 22px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  line-height: 19px;
+  color: #495057;
+  border-bottom: 2px solid #ffffff;
+}
+
+.userroles-form-items-container {
+  margin-top: 28px;
+  gap: 25px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.userroles-form-items-row {
+  margin-top: 25px;
+}
+
+.userroles-form-item-wrapper {
+  max-width: 525px;
+}
+
+.userroles-form-item-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userroles-form-item-header-name {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #495057;
+}
+
+.userroles-form-item-header-btn {
+  max-width: 95px;
+  max-height: 28px;
+  font-size: 11.37px;
+  line-height: 17px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userroles-form-item-row-second {
+  margin-top: 15px;
+}
+.userroles-form-item-checkboxes-wrapper {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 20px;
+
+  input {
+    margin-top: 0;
+  }
+}
+.userroles-form-item-label {
+  display: flex;
+  align-items: center;
+  input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+  }
+}
+.userroles-form-item-checkbox-name {
+  user-select: none;
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #495057;
+}
+
+.userroles-form-items-btns-wrapper {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  text-align: right;
+  grid-column: 2;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.userroles-form-items-btn-cancel {
+  margin-right: 20px;
+  height: 36px;
+  width: 102px;
+}
+.userroles-form-items-btn-submit {
+  height: 36px;
+  width: 137px;
+}
+
+// MEDIA
+@media (max-width: 1520px) {
+  .userroles-table-header-item-2 {
+    width: 50%;
+  }
+}

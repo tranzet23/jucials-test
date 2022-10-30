@@ -1,0 +1,55 @@
+// Нужно чтобы исправить баг с обрезаной тенью у dropdown menu
+.main-content {
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+#wave wave {
+  width: 100%;
+  overflow: hidden !important;
+}
+
+.form-select {
+  cursor: pointer;
+  width: auto;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  background-color: #dee4ef;
+}
+
+// Firefox
+input[type='range']::-moz-range-track {
+  background: #dee4ef;
+}
+
+// IE
+input[type='range']::-ms-track {
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+}
+
+input[type='range']::-ms-fill-lower {
+  background: #dee4ef;
+}
+input[type='range']::-ms-fill-upper {
+  background: #dee4ef;
+}
+
+input[type='range']:focus::-ms-fill-lower {
+  background: #dee4ef;
+}
+input[type='range']:focus::-ms-fill-upper {
+  background: #dee4ef;
+}
+
+.editor-container .simple-box > p {
+  display: none;
+}
+
+a.disabled {
+  pointer-events: none;
+}

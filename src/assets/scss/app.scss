@@ -1,0 +1,42 @@
+//Fonts
+@import 'custom/fonts/fonts';
+
+// Structure
+@import 'custom/structure/topbar';
+@import 'custom/structure/footer';
+@import 'custom/structure/page-head';
+@import 'custom/structure/right-sidebar';
+@import 'custom/structure/vertical';
+@import 'custom/structure/layouts';
+@import 'custom/structure/page-head';
+@import 'custom/global';
+
+// Components
+@import 'custom/components/helper';
+@import 'custom/components/breadcrumb';
+@import 'custom/components/form-court-sectors';
+@import 'custom/components/form-court-hearing';
+@import 'custom/components/wavesurfer';
+
+@import 'custom/components/casemodalwindow';
+
+// Pages
+@import 'custom/pages/authentication';
+@import 'custom/pages/transcription';
+@import 'custom/pages/judicial-cases';
+@import 'custom/pages/judicial-sectors';
+@import 'custom/pages/user-creation';
+@import 'custom/pages/user-roles';
+@import 'custom/pages/edit-templates';
+
+// Plugins
+@import 'custom/plugins/form-upload';
+@import 'custom/components/controls';
+@import 'custom/components/editor';
+
+// Editor
+@import 'custom/components/blocks';
+
+// Adaptation
+@import 'custom/adaptation/table';
+@import 'custom/adaptation/_controls.css';

@@ -1,0 +1,277 @@
+@import '../../variables';
+
+.transcription__breadcrumbs {
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  gap: 40px;
+  align-items: center;
+}
+
+// Значки кнопок свернуть / развернуть
+.player-fold__button {
+  justify-self: flex-start;
+}
+
+.player-fold__icon {
+  width: 18px;
+  height: 2px;
+  background-color: $blue;
+  transition: background-color 0.15s ease-in-out;
+
+  :hover {
+    background-color: white;
+  }
+}
+
+.player-unfold__icon {
+  width: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:before,
+  &:after {
+    transition: all 0.15s ease-in-out;
+  }
+
+  &:before {
+    content: '';
+    box-sizing: border-box;
+    width: 18px;
+    height: 2px;
+    background-color: $blue;
+    margin-bottom: 2px;
+  }
+
+  &:after {
+    content: '';
+    box-sizing: border-box;
+    width: 18px;
+    height: 8px;
+    background-color: white;
+    border: 2px solid $blue;
+  }
+}
+
+.player-fold__button:hover .player-fold__icon {
+  background-color: white;
+}
+
+.player-fold__button:hover {
+  .player-unfold__icon:before {
+    background-color: white;
+  }
+
+  .player-unfold__icon:after {
+    background-color: $blue;
+    border-color: white;
+  }
+}
+
+// Расположение плеера
+// Раскрытый плеер
+.page-heading {
+  display: grid;
+  grid-template-columns: min-content min-content 1fr;
+  align-items: center;
+  row-gap: 18px;
+
+  .player-container {
+    grid-column: auto / span 3;
+    overflow: hidden;
+  }
+
+  .page-headline {
+    margin-right: 24px;
+  }
+}
+
+// Свёрнутый плеер
+.page-heading.folded {
+  grid-template-columns: min-content min-content min-content;
+  align-items: stretch;
+  column-gap: 20px;
+  row-gap: 4px;
+  place-items: end;
+
+  .player-container {
+    grid-column: auto;
+    grid-row: auto / span 2;
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: 1px solid #eff2f7;
+    box-shadow: 0px 12px 24px 0px #12263f08;
+  }
+
+  .page-headline {
+    margin-right: 4px;
+  }
+
+  .empty-text {
+    place-self: end !important;
+  }
+
+  .hotkey-folded {
+    padding-bottom: 10px;
+    align-self: flex-end;
+    color: #6a7187;
+  }
+
+  .current-time {
+    color: $blue;
+  }
+
+  .card-body {
+    padding: 10px 20px;
+  }
+}
+
+.wavesurfer-container.folded {
+  margin-bottom: 12px;
+}
+// Многокональный вид
+.wavesurfer-container.multi-channel {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0 10px;
+  grid-auto-flow: column;
+  align-items: center;
+
+  .channel {
+    text-align: start;
+  }
+
+  select {
+    max-width: 150px;
+  }
+
+  &.reverse {
+    grid-template-columns: 1fr auto;
+    direction: rtl;
+
+    .channel {
+      text-align: end;
+    }
+  }
+}
+
+// Модалка созранения файла
+
+.modal__file-save {
+  max-width: 450px;
+
+  .modal-content {
+    padding: 60px 80px;
+  }
+
+  .modal__heading {
+    text-align: center;
+    font-size: 1.375rem;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+
+  .modal__heading {
+    margin-bottom: 28px;
+  }
+
+  .form-control {
+    margin-bottom: 38px;
+  }
+
+  .name-label {
+    font-weight: bold;
+  }
+
+  .modal__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      width: 100px;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+// WavesurferLoader component
+.audio-loader__container {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: $gray-200;
+  border-radius: 0.25rem;
+}
+
+// Таймлайн (компонент TimeLine)
+
+.timeline__wrapper {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.timeline__item {
+  position: relative;
+  vertical-align: sub;
+  font-size: 11px;
+  line-height: 14px;
+  color: #6a7187;
+}
+
+.timeline__item::before {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  transform: translateY(-50%);
+  left: 0;
+  content: '';
+  width: 1px;
+  height: 18px;
+  background: #ced4da;
+}
+.timeline__item_active {
+  flex: 1 1 auto;
+  z-index: 100;
+  span {
+    position: absolute;
+    left: 4px;
+  }
+}
+.timeline__item_active:last-child {
+  flex: 0 0 auto;
+}
+.timeline__item_active::before {
+  position: absolute;
+  content: '';
+  z-index: 100;
+  left: 0px;
+  width: 1px;
+  height: 22px;
+  background: #6a7187;
+}
+
+.doc-file-select,
+option {
+  max-width: 200px;
+}
+
+.doc-file-select option {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.panel-channel__table {
+  .table > :not(:first-child) {
+    border-top: none;
+  }
+}

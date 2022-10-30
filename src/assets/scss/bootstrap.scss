@@ -1,0 +1,23 @@
+//Core files
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+@import 'variables';
+@import './node_modules/bootstrap/scss/bootstrap';
+
+@import 'custom/components/reboot';
+@import 'custom/components/backgrounds';
+@import 'custom/components/backgrounds';
+@import 'custom/components/dropdown';
+@import 'custom/components/breadcrumb';
+@import 'custom/components/nav';
+@import 'custom/components/pagination';
+@import 'custom/components/datatables';
+@import 'custom/components/badge';
+@import 'custom/components/modal';
+@import 'custom/components/tooltip';
+@import 'custom/components/forms';
+@import 'custom/components/panel-colors';
+@import 'custom/components/player-recording';
+@import 'custom/components/table';
+@import 'custom/components/toast';
+@import 'custom/components/audio-control';

@@ -1,0 +1,38 @@
+//
+// _table.scss
+//
+
+.react-bootstrap-table-pagination-total {
+  padding-left: 12px;
+}
+
+// Стягивает последний столбец таблицы. Иначе если заполнено мало данных поледний столбец растяниться и растояние между
+// унопками редактировать и удалить будет слишком большое
+.table__button {
+  white-space: nowrap;
+}
+
+.table__header-button-wrapper {
+  width: 1px;
+}
+// ==========
+
+.table thead {
+  vertical-align: inherit;
+
+  tr th.sortable .order, tr th.sortable .react-bootstrap-table-sort-order {
+    margin-left: 8px;
+  }
+}
+
+.table th:last-of-type {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Убирает border с последней строки таблицы
+.table > :not(caption) > *:last-of-type > * {
+  border-bottom: none;
+}

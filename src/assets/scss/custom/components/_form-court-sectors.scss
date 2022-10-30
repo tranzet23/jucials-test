@@ -1,0 +1,80 @@
+.court-sectors__select {
+  cursor: pointer;
+  text-align: start;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.court-sectors__menu-outer {
+  position: absolute;
+  left: 145px;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+.court-sectors-form-wrapp {
+  width: max-content;
+}
+.courtsectors-form-span-selected-sectors {
+  color: #74788d;
+}
+.court-sectors-selected-show-wrapper {
+  margin-left: 20px;
+}
+
+.court-sectors-btn-selected-wrap {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: flex-start;
+}
+
+.court-sectors__menu {
+  border: 1px solid #eff2f7;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 24px 32px;
+  min-width: 100%;
+  box-shadow: 0 10px 20px rgba(18, 38, 63, 0.0313726);
+  background-color: white;
+
+  .form-control {
+    border: 1px solid #eff2f7 !important;
+    border-radius: 4px;
+    max-height: 178px;
+    overflow: hidden auto;
+  }
+
+  .form-check-item:not(:last-child) {
+    border-bottom: 1px solid #eff2f7;
+  }
+
+  .form-check {
+    padding: 12px 20px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    &-label {
+      max-width: 500px;
+    }
+  }
+
+  .form-check-input {
+    margin: 0 8px 0 0;
+    float: none;
+  }
+
+  .court-sectors__button {
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  // Не показывать знак предупреждения при ошибке валидации,
+  // так как он отоброжается поверх border
+  .was-validated .form-control:invalid,
+  .form-control.is-invalid {
+    background: none !important;
+  }
+}

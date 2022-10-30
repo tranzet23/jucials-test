@@ -1,0 +1,102 @@
+// Стили блока
+.simple-box {
+  padding: 10px;
+  margin: 1em 0;
+
+  background: rgba(0, 0, 0, 0.1);
+  border: solid 1px hsl(0, 0%, 77%);
+  border-radius: 2px;
+}
+
+.simple-box-description {
+  padding: 10px;
+  margin: 0;
+
+  background: #fff;
+  border: solid 1px hsl(0, 0%, 77%);
+}
+
+// Стили панели
+.editor-sidebar {
+  overflow-y: auto;
+  width: 300px;
+  padding: 20px 14px;
+
+  &__button {
+    text-align: start;
+    width: 100%;
+    padding: 16px 14px;
+    border-top: 1px solid #eff2f7;
+    border-bottom: 1px solid #eff2f7;
+    background-color: transparent;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: initial;
+    transition: all 0.15s ease-in-out;
+
+    &:first-of-type {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    i {
+      font-size: 14px;
+      color: #495057;
+    }
+
+    &.add:hover {
+      background-color: #eff2f7;
+
+      i {
+        color: #556ee6;
+      }
+    }
+  }
+}
+
+// Стили для кнопок блоков на странице редактирования
+.editor-sidebar__button {
+
+  .add {
+    cursor: pointer;
+  }
+  
+  .block__edit-icons {
+    display: flex;
+    justify-items: center;
+
+    & i:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    i {
+      font-size: 9.5pt;
+      color: #d7dde8;
+      cursor: pointer;
+      transition: color 0.15s ease-in-out;
+
+      &:hover {
+        color: #556ee6;
+      }
+    }
+  }
+}
+
+.editor__blocks__add_btn_wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+.editor__sidebar_block_title_wrapper {
+  display: flex;
+  align-items: center;
+}
+.editor__block_title {
+  display: block;
+  margin-left: 6px;
+}

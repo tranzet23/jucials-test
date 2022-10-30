@@ -1,0 +1,5 @@
+@media only screen and (max-width: 1400px) {
+    .table td button.w-lg, .table td a.w-lg {
+        min-width: 110px;
+    }
+}

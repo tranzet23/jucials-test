@@ -1,0 +1,124 @@
+.edit__template_modal_wrapper {
+  max-width: 800px;
+}
+
+.template__title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #495057;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.template__title_input {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.template__title_input_wrapper {
+  position: relative;
+  max-width: 270px;
+  width: 100%;
+}
+.template__header {
+  width: 100%;
+}
+.template__input_img_edit {
+  font-size: 10pt !important;
+  position: absolute;
+  color: #d7dde8 !important;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.template__cancel_button {
+  width: 100px;
+}
+.template__save_button {
+  width: 130px;
+}
+.template__delete_button {
+  margin-right: 16px;
+  width: 100px;
+}
+
+// BLOCK EDIT MODAL
+
+.template__edit_popup_title_wrapper {
+  padding-left: 36px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #556ee6;
+}
+
+.block__edit_body_wrapper {
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+.block__edit_label {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #495057;
+}
+
+.edit__block_title_input_wrapper {
+  max-width: none;
+}
+
+.block__edit_section_editor {
+  margin-top: 25px;
+}
+
+.block__edit_editor_wrapper {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.block__edit_toolbar {
+  background: #eff2f7;
+  border-radius: 4px;
+  .ck-toolbar {
+    border: none !important;
+    border-radius: 1px;
+    background: transparent !important;
+  }
+}
+
+.block__edit_editor {
+  .ck-editor__editable {
+    margin: 17px 25px 21px;
+
+    padding: 0 !important;
+    width: auto;
+    height: 275px;
+    box-shadow: none !important;
+    min-height: auto !important;
+    border: none !important;
+  }
+}
+
+.template_edit_modal_btns_wrapper {
+  margin-top: 25px;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.edit__block_modal_btn_cancel {
+  width: 102px;
+}
+.edit__block_modal_btn_primary {
+  margin-left: 20px;
+  width: 128px;
+}

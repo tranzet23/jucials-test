@@ -1,0 +1,110 @@
+//
+// _modal.scss
+//
+
+.modal-content {
+  border: none;
+  i {
+    cursor: pointer;
+  }
+}
+
+.modal-closebtn {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: -15px;
+  right: -15px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #d4daf8;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #556ee6;
+  cursor: pointer;
+  user-select: none;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+}
+.modal-open {
+  padding-right: 0 !important;
+}
+.modal-body {
+  padding: 36px 40px;
+}
+
+.modal-logo-header {
+  display: flex;
+  justify-content: right;
+}
+
+.modal-footer-container {
+  border-top: none;
+  padding-bottom: 36px;
+}
+
+.modal-dialog {
+  max-width: 60rem;
+  margin: 1.75rem auto;
+}
+
+.modal-heading {
+  padding: 0 30px 24px;
+}
+
+.modal-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+
+  & button:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+// Узкие модалки удаления
+.modal-dialog-narrow {
+  max-width: 450px;
+
+  .modal-content {
+    padding: 40px 50px;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .modal-center-buttons {
+    }
+  }
+}
+
+// Кнопки по центру модалки. Обычно в модалке удаления
+.modal-center-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  & button:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+// Узкая шапка (Заголовок и лого на одном уровне)
+.modal-header__narrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 40px 18px 40px;
+  border-radius: 8px 8px 0 0;
+
+  h3,
+  .h3,
+  h5,
+  .h5 {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+}
+// ========

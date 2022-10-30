@@ -1,0 +1,133 @@
+@import '../../variables';
+
+:root {
+  /* Make the mention background blue. */
+  --ck-color-mention-background: transparent;
+
+  /* Make the mention text dark grey. */
+  --ck-color-mention-text: default;
+}
+
+.ck-toolbar {
+  border: 1px solid $gray-400 !important;
+  border-bottom: 0 !important;
+  background-color: #fff !important;
+}
+
+.ck-content {
+  background-color: white;
+  width: calc(21cm + 2px);
+  min-height: calc(29.7cm + 2px);
+  height: fit-content;
+  padding: 2cm 1.2cm !important;
+  margin: 2.5rem;
+  border: 1px $gray-400 solid !important;
+  box-shadow: 0 0 5px #00000019;
+  box-sizing: border-box;
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.document-editor__toolbar {
+  width: 100%;
+}
+
+.editor-container {
+  width: 100%;
+  border-right: 0;
+  background: $gray-200;
+  box-sizing: border-box;
+  position: relative;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.row-editor {
+  border: 1px $gray-400 solid;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.ck.ck-list__item .ck-button .ck-button__label,
+.ck-fontsize-option {
+  font-size: 1rem !important;
+  font-weight: normal !important;
+}
+
+// Editor controls
+
+.editor__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  i {
+    font-size: 11pt;
+    color: $blue;
+  }
+
+  &__left {
+    display: flex;
+    align-items: stretch;
+
+    .template_title {
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      padding: 0.2rem !important;
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      &:first-of-type {
+        margin-right: 16px;
+      }
+    }
+
+    button:not(:last-child) {
+      margin-right: 0.4rem;
+    }
+  }
+
+  .plus-icon {
+    font-size: 8px;
+  }
+
+  .editor__buttons-container {
+    display: flex;
+
+    button:first-of-type {
+      margin-right: 16px;
+    }
+  }
+}
+
+.card-body {
+  &.editor__container_inactive {
+    opacity: 0.5;
+    pointer-events: none;
+    .editor-container {
+      :last-child {
+        ::before {
+          content: 'Возможность транскрибации записи будет доступна после остановки записи';
+
+          display: flex;
+          justify-content: center;
+          color: black;
+          font-size: large;
+          padding: 25% 0 75% 0;
+        }
+      }
+    }
+  }
+}

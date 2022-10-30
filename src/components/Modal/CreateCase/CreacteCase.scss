@@ -1,0 +1,88 @@
+.createCaseBody {
+  padding: 0;
+}
+
+.modal-createCase-head {
+  padding: 50px 60px;
+  background: rgba(85, 110, 230, 0.25);
+  width: 100%;
+  margin-bottom: 35px;
+
+  p {
+    color: #556EE6
+  }
+}
+
+.createCaseForm {
+  padding: 0 30px;
+  width: 100%;
+
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 410px;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  input {
+    width: 250px;
+  }
+
+  .rowGap {
+    column-gap: 60px
+  }
+
+  h6 {
+    margin-bottom: 0;
+  }
+  .modal-columns {
+    flex: 1 0;
+    justify-content: space-between;
+  }
+}
+
+.modal-right-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+  margin-top: 24px;
+
+}
+.head__modal-column {
+  display: flex;
+  gap: 55px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  & > div {
+    max-width: 410px;
+    width: 100%;
+  }
+}
+
+.createCaseBody__checkbox {
+  width: 250px;
+
+  input {
+    max-width: 16px;
+    width: 100%;
+    height: 17.75px;
+    margin-right: 20px;
+    margin-top: 0;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  //background-image: url('/bx-calendar.svg');
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}

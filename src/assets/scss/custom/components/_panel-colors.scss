@@ -1,0 +1,28 @@
+//
+// panel-colors.scss
+//
+
+.panel-colors {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  &-list {
+    width: 180px;
+    height: 200px;
+    padding: 6px 0 0 12px;
+  }
+
+  &-indicator {
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  div[title='#FFFFFF'], .panel-colors-indicator[style='background: rgb(255, 255, 255);'] {
+    background: url("../../../images/transparent-background.svg") !important;
+    background-size: 39% !important;
+    background-repeat: repeat;
+    //background-position: center center;
+  }
+}

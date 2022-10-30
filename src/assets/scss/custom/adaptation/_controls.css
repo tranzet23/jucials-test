@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1400px) {
+    .sound-speed-controls input {
+        display: none;
+    }
+
+    .control__channel-button {
+        min-width: unset;
+    }
+
+    .judicialcases-editbtn {
+        padding: 8px 10px;
+    }
+}

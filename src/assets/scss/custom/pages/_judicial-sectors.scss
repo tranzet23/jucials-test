@@ -1,0 +1,186 @@
+.popup__logo_header {
+  text-align: right;
+}
+
+.bg__relative {
+  position: relative;
+}
+
+.JudicialSector__list_table {
+  thead {
+    background: #f8f9fa;
+    border-top: 2px solid #eff2f7;
+  }
+}
+
+.list_court_sectors_item_id {
+  width: 32px;
+  height: 32px;
+  background: #556ee6;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+//.JudicialSector__list_item_btn_edit {
+//  max-width: 65%;
+//  width: 100%;
+//  border: 1px solid #556ee6;
+//  border-radius: 4px;
+//  font-family: Poppins, sans-serif;
+//  font-style: normal;
+//  font-weight: normal;
+//  font-size: 13px;
+//  line-height: 19px;
+//  text-align: center;
+//  color: #556ee6;
+//  padding: 8px 30px;
+//  background: transparent;
+//  margin-right: 10px;
+//}
+//.JudicialSector__list_item_btn_delete {
+//  max-width: 35%;
+//  width: 100%;
+//  border: 1px solid #74788d;
+//  border-radius: 4px;
+//  font-family: Poppins, sans-serif;
+//  font-style: normal;
+//  font-weight: normal;
+//  font-size: 13px;
+//  line-height: 19px;
+//  text-align: center;
+//  background: transparent;
+//  color: #74788d;
+//  padding: 8px 15px;
+//  margin-left: 10px;
+//}
+
+// popup content
+.court__sectors_button {
+  width: 100%;
+}
+
+.JudicialSector__list_item_btn_wrap {
+  justify-content: space-between;
+}
+
+.court__popup_title {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0 30px;
+}
+.popup__form_wrapper {
+  margin-top: 50px;
+  border-radius: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  label {
+    margin-bottom: 0;
+  }
+}
+.popup__input__wrapper {
+  margin-top: 18px;
+}
+.popup__input__wraper_flex {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+}
+
+.popup__input_title {
+  font-weight: bold;
+}
+.popup__input {
+  max-height: 37px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  color: #495057;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.popup__btn_wrap {
+  text-align: right;
+  margin-top: 48px;
+}
+.popup__btn {
+  border: none;
+  border-radius: 4px;
+  font-family: Poppins, sans-serif;
+}
+
+.bg__border {
+  border-radius: 8px 0px 0px;
+  padding-top: 24px;
+}
+
+.popup__card {
+  border-radius: 20px;
+  background: white;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.3s linear;
+  max-width: 500px;
+}
+.popup__card_active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.JudicialSector__list_header_btn_wrap {
+  text-align: center;
+}
+
+.popup__delete_content {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.popup__delete_text {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #22252c;
+  max-width: 200px;
+}
+.popup__delete_img {
+  width: 100px;
+  height: 100px;
+  background: #556ee6;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  margin-top: 25px;
+}
+.popup__delete_btns {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 100px;
+}

@@ -1,0 +1,299 @@
+@import '../../variables';
+
+.control {
+  display: grid;
+  grid-template-columns: auto 4fr repeat(3, auto) 2fr auto 2fr auto 4fr auto;
+  margin-top: 30px;
+  gap: 10px 20px;
+  align-items: center;
+  background-color: #f5f7fa;
+  border-radius: 4px;
+  padding: 8px 14px;
+
+  &__channel-button {
+    min-width: 200px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    color: #343a40;
+
+    &:disabled,
+    &[disabled],
+    &.disabled {
+      color: $gray-600;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .control__button:hover {
+    color: #fff;
+    background-color: #485ec4;
+    border-color: #4458b8;
+  }
+
+  .control__hotkey {
+    color: #6a7187;
+    text-align: center;
+  }
+
+  .control__sound-speed__hotkeys {
+    display: flex;
+    justify-content: center;
+
+    p:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__separator {
+    background-color: #fff;
+    width: 2px;
+    padding: 4px 0;
+    align-self: stretch;
+    justify-self: center;
+  }
+
+  .empty-text {
+    text-align: right;
+  }
+
+  input[type='range'] {
+    width: $form-range-track-width;
+  }
+
+  &__recordig {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto 0 auto auto 0 auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      '....... ....... play stop ....... transcribation'
+      'hot-key-1 ....... hot-key-2 hot-key-3 ....... hot-key-4';
+    place-content: center;
+    place-items: center;
+    gap: 10px 30px;
+
+    .play {
+      grid-area: play;
+    }
+
+    .stop {
+      grid-area: stop;
+    }
+
+    .control__transcr-button-container {
+      grid-area: transcribation;
+
+      button {
+        min-width: 350px;
+      }
+    }
+  }
+}
+
+.control__transcr-button-container {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#transcribation-time {
+  margin: 0;
+  min-width: 1em;
+}
+
+label i {
+  display: flex;
+  align-items: center;
+}
+
+.sound-speed-controls,
+.volume-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 36px;
+}
+
+.control__button {
+  background: $blue;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 200px;
+  box-sizing: border-box;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i:before {
+    color: white;
+  }
+}
+
+.control__icon {
+  margin-bottom: 0;
+  line-height: 1;
+
+  i {
+    font-size: 14pt;
+  }
+
+  i:before {
+    color: $blue;
+  }
+}
+
+.rewind-forwards i {
+  padding-left: 2px;
+}
+
+.rewind-backwards i {
+  padding-right: 2px;
+}
+
+.rewind-backwards i,
+.rewind-forwards i,
+.play i,
+.pause i {
+  font-size: 1.3333333333rem;
+}
+
+// Folded styles
+.folded-player__wave {
+  background-color: #dee4ef;
+}
+
+.folded-player__progress {
+  background-color: #4353ff;
+}
+
+.player__progress-time {
+  & p {
+    position: absolute;
+    top: -1px;
+    z-index: 3;
+    font-size: 10px;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    color: #636363;
+  }
+
+  & p:first-child {
+    left: 3%;
+  }
+
+  & p:last-child {
+    right: 3%;
+  }
+}
+
+.page-heading.folded {
+  .audio-loader__container {
+    padding: 4px 0;
+  }
+
+  .control__channel-button {
+    margin-bottom: 0;
+  }
+
+  .control {
+    grid-template-columns: auto auto auto 0 auto 0 auto;
+    place-items: center;
+    column-gap: 10px;
+    gap: 6px 10px;
+    margin-top: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .play i {
+    font-size: 1rem;
+  }
+
+  .timeline__wrapper {
+    display: none;
+  }
+
+  // Кнопка громкости
+  .volume-controls {
+    position: relative;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border: none;
+  }
+
+  .volume-controls img {
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    user-select: none;
+  }
+  // ==================
+
+  .empty-text {
+    place-self: end !important;
+  }
+
+  .hotkey-folded {
+    padding-bottom: 10px;
+    align-self: flex-end;
+    color: #6a7187;
+  }
+
+  // Folded waveform
+  #wave {
+    position: relative;
+  }
+
+  wave {
+    border-right: 0 !important;
+  }
+
+  #wave canvas {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .current-time {
+    color: $blue;
+  }
+  // ===============
+
+  .rewind-backwards i,
+  .rewind-forwards i {
+    font-size: 1rem;
+  }
+
+  .play,
+  .rewind-backwards,
+  .rewind-forwards {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.multi-channel__select {
+  border: none;
+  padding: 0.25rem 1.75rem 0.25rem 0.75rem;
+
+  &:focus {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,61 @@
+.cart__title {
+  //font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 46px;
+}
+
+.form__col-password {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.form__btn-password {
+  margin-left: 17px;
+  min-width: 20%;
+  padding: 0.47rem 0.75rem;
+  align-items: flex-start;
+}
+
+.court-sectors-btn-only-wrap {
+  position: relative;
+}
+
+.form-group-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+.form-group-btn__btn-cancel {
+  margin-right: 10px;
+  width: 102px;
+  height: 36px;
+}
+.form-group-btn__btn-save {
+  margin-left: 10px;
+  width: 102px;
+  height: 36px;
+}
+.user_list_no_avatar {
+  width: 32px;
+  height: 32px;
+  background: #556ee6;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.user_list_no_avatar_delete_modal {
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  background: #74788d;
+}

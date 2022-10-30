@@ -1,0 +1,88 @@
+{
+  "name": "arm-secretary",
+  "version": "0.1.0",
+  "homepage": "build",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-react": "^3.0.3",
+    "@uiw/react-color-circle": "^1.0.6",
+    "@uiw/react-color-github": "^1.0.6",
+    "availity-reactstrap-validation-safe": "^2.6.1",
+    "axios": "^0.22.0",
+    "bootstrap": "^5.1.0",
+    "ckeditor5-custom-build": "file:./editor",
+    "classnames": "^2.3.1",
+    "flatpickr": "^4.6.13",
+    "formik": "^2.2.9",
+    "generate-password": "^1.7.0",
+    "html-docx-js": "^0.3.1",
+    "metismenujs": "^1.3.0",
+    "node-sass": "6",
+    "petrovich": "^0.2.1",
+    "react": "^17.0.2",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-bootstrap-table2-paginator": "^2.1.2",
+    "react-bootstrap-table2-toolkit": "^2.1.3",
+    "react-circular-progressbar": "^2.0.4",
+    "react-dom": "^17.0.2",
+    "react-drawer": "^1.3.4",
+    "react-dropzone": "^11.4.2",
+    "react-flatpickr": "^3.10.13",
+    "react-hook-form": "^7.38.0",
+    "react-hotkeys": "^2.0.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-text-mask": "^5.4.3",
+    "react-wavesurfer.js": "^0.0.5",
+    "reactstrap": "^8.9.0",
+    "redux": "^4.1.2",
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.1.5",
+    "simplebar-react": "^2.3.5",
+    "uuid": "^8.3.2",
+    "wavesurfer.js": "^6.0.4",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.11"
+  },
+  "resolutions": {
+    "@types/react": "17.0.44"
+  },
+  "scripts": {
+    "start": " react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md,html,css,less,scss}\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^11.1.0",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.37",
+    "@types/react-bootstrap-table-next": "^4.0.17",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.3.2",
+    "prettier": "^2.5.1",
+    "typescript": "^4.1.2"
+  }
+}
